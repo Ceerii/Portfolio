@@ -1,33 +1,202 @@
-.App {
-  text-align: center;
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+body{
+  background: #f6f6f6;
+}
+.container{
+  font-family:'Open Sans';
+}
+.first-container{
+ height:10px;
+ color:transparent;
+ font-size:10px;
+ text-align:center;
+ padding:30px;
+ position:sticky;
+ background:#f6f6f6;
+ transition: 1s;
+}
+.container-name{
+  font-size:36px;
+  font-family:'Open Sans';
+  font-weight: 300;
+  margin-top:10px;
+}
+div.brackets p:before, div.brackets p:after{
+  position: relative;
+  opacity: 0;
+  font-size: 16px;
+  top: 0px;
+  transition: all 0.3s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+div.brackets p:before{
+  content: '<';
+  left: 0px;
+  transform: translateX(10px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.brackets p:after{
+  content: '/>';
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+div.brackets p:hover:before, div.brackets p:hover:after{
+  opacity: 1;
+  transform: translateX(0px);
+  font-weight: bolder;
+}
+.brackets{
+  text-align:center;
+  border-top:1px solid #e9e9e9;
+  border-left:none;
+  border-right:none;
+  background:#f6f6f6;
+  height:90px;
+  width:1069px;
+  margin: 0 120px;
+  padding:20px;
+  border-bottom: 1px solid #e9e9e9;
+   /* text-align: center; 
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    z-index:999; */
+
+}
+.brackets-container{
+  position: fixed;
+
+}
+.brackets>p{
+  font-size:36px;
+  margin-top: 20px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+.third-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content:center;
+  height:100px;
+  text-align:center;
+  font-size:36px;
+  margin-left:-110px;
+}
+.third-container>p{
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height:70px;
+  letter-spacing: 4px;
+  width:400px;
+  margin-top:200px;
+}
+.check-below{
+  margin-top:220px;
+  margin-left:-100px;
+}
+.bigtext{
+  display: flex;
+  justify-content:center;
+
+}
+.second-container{
+  text-align:center;
+  background: #ff7373;
+  height:1000px;
+  margin:0 120px 0 120px;
+  color:white;
+ 
+}
+.mainbigtext{
+  margin-top: 500px;
+  font-size:36px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height:70px;
+  letter-spacing: 4px;
+  width:400px;
+ 
+
+
+}
+.scrolled{
+  display: block;
+  height:100px;
+  text-align:center;
+  padding-top: 30px;
+  padding:60px;
+  position:sticky;
+  background:#f6f6f6;
+  transition: 1s;
+  padding-bottom: 2px;
+}
+.fourth-container{
+  display: flex;
+  width:900px;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 0 220px;
+
+}
+.fourth-container-image{
+  width:350px;
+  height:300px;
+  background-image: url("https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362");
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.social-icon-container{
+  text-align:center;
+  border-top:1px solid #e9e9e9;
+  border-left:none;
+  border-right:none;
+  background:#f6f6f6;
+  height:90px;
+  width:1069px;
+  margin: 0 120px;
+  padding:20px;
+  border-bottom: 1px solid #e9e9e9;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ul{
+  list-style:none;
+  display:flex;
+  font-size:28px;
+  width:290px;
+  color:#ababab;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.two:hover{
+  color: #007bb5;
+}
+.one:hover{
+  color:#333333;
+}
+.three:hover{
+  color:#B29773;
+}
+.four:hover{
+  color:#946D46;
+}
+.fourth-container-image>p{
+  color:white;
+  display:flex;
+  justify-content: center;
+}
+.content:hover{
+  width:350px;
+  height:163px;
+  background-color: rgba(0,0,0,0.3);
+  position:relative;
+  z-index:2000;
+  margin-top:100px;
+}
+.content{
+  color:transparent;
 }
