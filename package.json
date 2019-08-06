@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ceerii.github.io/Portfolio",
+  "homepage": ".",
   "dependencies": {
     "animate.css": "^3.7.2",
     "gh-pages": "^2.1.0",
